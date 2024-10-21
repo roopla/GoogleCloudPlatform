@@ -91,7 +91,7 @@ gcloud compute firewall-rules create $FIREWALL_RULE_NAME \
 # Reserve a global external static IP address
 echo "Reserving a global external static IP address..."
 
-gcloud compute addresses create $STATIC_IP_NAME  --global --network-tier=Standard
+gcloud compute addresses create $STATIC_IP_NAME  --global  
 
 
 # Get the reserved static IP address
