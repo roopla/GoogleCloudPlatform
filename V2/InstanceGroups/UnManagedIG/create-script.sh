@@ -93,6 +93,8 @@ echo "Reserving a global external static IP address..."
 
 gcloud compute addresses create $STATIC_IP_NAME  --global  
 
+#gcloud compute addresses create lb-static-ip  --description=lb-static-ip --network-tier=STANDARD --region=us-central1
+
 
 # Get the reserved static IP address
 STATIC_IP=$(gcloud compute addresses describe $STATIC_IP_NAME --global --format="get(address)")
